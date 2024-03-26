@@ -12,7 +12,7 @@ def get_student_number():
 @app.route('/webhook', methods=['POST'])
 def webhook():
     response_text = "Sure, I can help you schedule a meeting!"
-    return jsonify([response_text])
+    return jsonify({"fulfillmentMessages":[{"test":{"text":[response_text ]}}]})
 
 if __name__ == '__main__':
     app.run(debug=True)
