@@ -9,7 +9,7 @@ def get_student_number():
     return jsonify({'student_number': student_number})
 
 # Route to return text for Dialogflow integration
-@app.route('/webhook', methods=['GET'])
+@app.route('/webhook', methods=['POST'])
 def webhook():
     response_text = "Sure, I can help you schedule a meeting with $person."
     return response_text
