@@ -11,7 +11,7 @@ def get_student_number():
 # Route to return text for Dialogflow integration
 @app.route('/webhook', methods=['POST'])
 def webhook():
-    response_text = "Sure, I can help you schedule a meeting with $person."
+    response_text = "Sure, I can help you schedule a meeting!"
     return response_text
 
 if __name__ == '__main__':
