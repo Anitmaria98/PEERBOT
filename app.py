@@ -13,7 +13,7 @@ def get_student_number():
 def webhook():
     response_text = "Sure, I can help you schedule a meeting!"
     return jsonify({
-  "fulfillmentText": "HAHAHAAHAHA"
+  "fulfillmentText": response_text
 })
 
 if __name__ == '__main__':
